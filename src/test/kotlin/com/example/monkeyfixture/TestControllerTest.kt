@@ -49,8 +49,9 @@ class TestControllerTest {
             .andDo(MockMvcResultHandlers.print())
     }
 
+    // Fails intermittently
     @Test
-    fun getSavedQuestionnaire2() {
+    fun getSavedQuestionnaireWithJavaxPlugin() {
         val uri = "/test"
         val sut: LabMonkey = LabMonkey.labMonkeyBuilder()
             .defaultNullInjectGenerator { DefaultNullInjectGenerator.NOT_NULL_INJECT }
