@@ -21,3 +21,11 @@ class TestService {
 }
 
 data class TestDataClass(val id: Long, val name: String, val name2: String, val name3: String)
+data class TestDataClassV2(
+    val id: Long,
+    val name: String,
+    val container: List<String>,
+    val container2: List<InnerTestDataClass>
+) {
+    data class InnerTestDataClass(val id: Long, val name: String, val name2: String, val name3: String)
+}

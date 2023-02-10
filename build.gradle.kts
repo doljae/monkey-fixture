@@ -22,11 +22,15 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
-    implementation("com.navercorp.fixturemonkey:fixture-monkey-starter-kotlin:0.4.11")
-    implementation("com.navercorp.fixturemonkey:fixture-monkey-jackson:0.4.11")
-    implementation("com.navercorp.fixturemonkey:fixture-monkey-javax-validation:0.4.11")
-    implementation("io.mockk:mockk:1.13.3")
-    implementation("com.ninja-squad:springmockk:3.1.2")
+    implementation("com.navercorp.fixturemonkey:fixture-monkey-starter-kotlin:0.4.13")
+    implementation("com.navercorp.fixturemonkey:fixture-monkey-jackson:0.4.13")
+    implementation("com.navercorp.fixturemonkey:fixture-monkey-javax-validation:0.4.13")
+    implementation("com.navercorp.fixturemonkey:fixture-monkey-jakarta-validation:0.4.13")
+    implementation("io.mockk:mockk:1.13.4")
+    implementation("com.ninja-squad:springmockk:4.0.0")
+
+    testImplementation("io.kotest:kotest-runner-junit5:5.5.5")
+    testImplementation("io.kotest:kotest-assertions-core:5.5.5")
 }
 
 tasks.withType<KotlinCompile> {
